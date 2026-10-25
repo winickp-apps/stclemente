@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St. Clemente — Art &amp; Other Misdemeanours</title>
+  <meta name="description" content="Original large-scale works by St. Clemente. British born, enchanted by Arabia — where palms and pigment evoke the romance of faraway places, nostalgia and times gone by.">
+  <meta property="og:title" content="St. Clemente — Art &amp; Other Misdemeanours">
+  <meta property="og:description" content="Original large-scale works where palms and pigment evoke the romance of faraway places.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Cormorant+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="St. Clemente — Home">ST. CLEMENTE</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#commissions">Commissions</a></li>
+      <li><a href="#correspondence">Correspondence</a></li>
+      <li>
+        <!--
+          E-COMMERCE HOOK — Cart Icon
+          Wire #nav-cart click to open cart drawer/modal.
+          Wire #cart-count to display item count from cart state.
+        -->
+        <a href="#works" class="nav-cart" id="nav-cart" aria-label="View cart">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cart-count" hidden>0</span>
+        </a>
+      </li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#commissions">Commissions</a></li>
+      <li><a href="#correspondence">Correspondence</a></li>
+    </ul>
+    <div class="mobile-menu-sign">
+      <span class="script-light">with love</span>
+      <span class="mobile-brand">ST. CLEMENTE</span>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home" aria-label="St. Clemente — Art &amp; Other Misdemeanours">
+    <div class="hero-image">
+      <img
+        src="assets/images/hero.jpg"
+        alt="Abbie, founder of St. Clemente, beside a colonial rattan chair with palm fronds against a warm stone wall"
+        fetchpriority="high"
+        loading="eager"
+      >
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== STORY ===== -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="rule"></div>
+      <div class="story-grid">
+        <div class="story-visual">
+          <img
+            src="assets/images/artwork-1.jpg"
+            alt="The Palm House artwork in progress — ink and pigment on aged linen laid out on a studio table"
+            loading="lazy"
+          >
+        </div>
+        <div class="story-text">
+          <span class="script-accent">the story of</span>
+          <h2 class="story-heading">ST. CLEMENTE</h2>
+          <p>British born, enchanted by Arabia, and forever finding beauty in the meeting of the two worlds.</p>
+          <p>A lifelong affection for written word, faded ink, forgotten letters and all things botanical.</p>
+          <p>Here, these loves come together in large-scale works, where palms and pigment evoke the romance of faraway places, nostalgia and times gone by&hellip;</p>
+          <button class="text-link" id="story-open" aria-haspopup="dialog" aria-controls="story-overlay">
+            Read the full story &rarr;
+          </button>
+        </div>
+      </div>
+      <div class="rule"></div>
+    </div>
+  </section>
+
+  <!-- Full Story Overlay -->
+  <div class="story-overlay" id="story-overlay" role="dialog" aria-modal="true" aria-label="The Story of St. Clemente" aria-hidden="true">
+    <button class="overlay-close" id="story-close" aria-label="Close story">
+      <span>Close</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <line x1="1" y1="1" x2="13" y2="13"/>
+        <line x1="13" y1="1" x2="1" y2="13"/>
+      </svg>
+    </button>
+    <div class="story-overlay-inner">
+      <span class="script-accent" style="display:block; text-align:center; margin-bottom:8px;">the story of</span>
+      <h2 class="overlay-title">ST. CLEMENTE</h2>
+      <div class="overlay-body">
+        <p>History has always belonged, in part, to those born with an extraordinary sense of curiosity.</p>
+        <p>Artists, adventurers, writers and wonderfully restless souls who longed to explore, to discover and to experience a world beyond the one they knew. Those who found the familiar never quite enough.</p>
+        <p>Drawn to distant shores and unfamiliar cultures, they travelled, fell in love, collected stories and created beautiful things. Some returned home with extraordinary tales. Others were rather less fortunate.</p>
+        <p>For curiosity, as history so charmingly reminds us, has a peculiar habit of leading even the most well-intentioned souls into a rather extraordinary spot of trouble.</p>
+        <p>Among them were British wanderers who found themselves on the wrong side of foreign laws, far from the familiarity of home and often time behind prison walls. Their stories survive in handwritten appeals for mercy and letters of clemency, preserving their hopes, fears and longing for freedom across the ages.</p>
+        <p>Centuries later, I found myself unexpectedly among their company.</p>
+        <p>A Welshwoman by birth, and a wanderer by nature, I had spent the better part of a decade making a home beneath foreign skies. Yet, in a tumultuous twist of fate, I found myself behind the walls of a Middle Eastern prison, accused of a crime I had not committed.</p>
+        <p>In a land I had come to know and love, I was suddenly at the mercy of laws I scarcely understood, and had never felt quite so far from the rolling hills of Wales.</p>
+        <p>An experience that would change me profoundly.</p>
+        <p>Some might have thought such an experience would put an end to my wandering spirit. Quite the contrary.</p>
+        <p>For it seems curiosity, despite its rather questionable track record, is a difficult habit to break.</p>
+        <p>Naturally, I began to wonder about the others who had found themselves in similarly unfortunate predicaments. Who were these curious souls? What peculiar twists of fate had landed them in such trouble?</p>
+        <p>I began searching through the archives, following the stories of wanderers, the accused and the misunderstood, until I came upon the most extraordinary collection of handwritten appeals.</p>
+        <p>Letters pleading for mercy, filled with hope, fear and longing. Beautifully composed words, ink fading into parchment. Each a little piece of someone&rsquo;s story, preserved long after its author had disappeared.</p>
+        <p>I found something deeply moving in the contrast. Such beautiful things, born of such difficult circumstances. And among those beautiful old letters, one word resonated more deeply than the rest.</p>
+        <p><em>Clemency.</em></p>
+        <p>The granting of mercy, compassion and the possibility of a second chance. A word that had become rather close to my own heart.</p>
+        <p>And somewhere between their search for clemency and my own, Saint Clemente was born.</p>
+        <p>An alter ego, perhaps. A kindred spirit to those curious wanderers who had come before me. Born from their letters of mercy and a lifelong love of writing and painting, Saint Clemente became my way of turning a rather unfortunate chapter into something beautiful.</p>
+        <p>With ink and time-worn fabric, I create pieces that borrow their romance from another age. Inspired by faded letters of clemency, my British heritage and my travels to faraway places, each work carries a whisper of the past, whilst telling a story that is entirely my own.</p>
+        <p>A little romantic, a little rebellious, and rather unwilling to let misfortune have the final word.</p>
+      </div>
+      <blockquote class="overlay-quote">
+        <p>&ldquo;Every saint has a past,<br>and every sinner has a future.&rdquo;</p>
+        <cite>&mdash; Oscar Wilde</cite>
+      </blockquote>
+      <div class="overlay-sign">
+        <span class="script-accent" style="display:block; text-align:center; font-size:1.375rem; margin-bottom:6px;">with love</span>
+        <p class="overlay-brand">ST. CLEMENTE</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SELECTED WORKS ===== -->
+  <section class="works-section" id="works">
+    <!--
+      ════════════════════════════════════════════════════
+        E-COMMERCE INTEGRATION POINT — Selected Works
+      ════════════════════════════════════════════════════
+      Each .artwork-card is structured for direct commerce wiring:
+        · data-product-id  — product identifier (connect to your inventory API)
+        · data-price       — price value (or "POA" for price on application)
+        · data-title       — artwork title
+        · data-medium      — materials description
+
+      Recommended paths:
+        · Shopify Storefront API: replace static cards with JS-rendered products
+        · WooCommerce REST API:   same card pattern, dynamic data-* attributes
+        · Stripe Payment Links:  wire .btn-enquire href to Stripe checkout link
+
+      Cart integration:
+        · On "Add to Cart": update #cart-count badge and open cart drawer
+        · See assets/js/main.js → CART_HOOK section
+
+      To add a product page: link .artwork-image to /works/[slug].html
+      ════════════════════════════════════════════════════
+    -->
+    <div class="works-inner">
+      <h2 class="section-label">SELECTED WORKS</h2>
+
+      <div class="works-grid">
+
+        <article
+          class="artwork-card"
+          data-product-id="ph-001"
+          data-price="POA"
+          data-title="The Palm House I"
+          data-medium="Ink and pigment on time-worn linen"
+        >
+          <div class="artwork-image">
+            <img
+              src="assets/images/artwork-1.jpg"
+              alt="The Palm House I — a delicate palm frond rendered in ink and pigment on aged linen"
+              loading="lazy"
+            >
+            <div class="artwork-overlay" aria-hidden="true">
+              <a href="#correspondence" class="btn-enquire">Enquire to Purchase</a>
+            </div>
+          </div>
+          <div class="artwork-info">
+            <h3 class="artwork-title">The Palm House I</h3>
+            <p class="artwork-medium">Ink &amp; pigment on time-worn linen</p>
+            <p class="artwork-price">Price on Application</p>
+          </div>
+        </article>
+
+        <article
+          class="artwork-card"
+          data-product-id="ph-002"
+          data-price="POA"
+          data-title="The Palm House II"
+          data-medium="Ink and pigment on time-worn linen"
+        >
+          <div class="artwork-image">
+            <img
+              src="assets/images/artwork-2.jpg"
+              alt="The Palm House II — twin palms and a distant mosque rendered in ink and pigment on aged linen"
+              loading="lazy"
+            >
+            <div class="artwork-overlay" aria-hidden="true">
+              <a href="#correspondence" class="btn-enquire">Enquire to Purchase</a>
+            </div>
+          </div>
+          <div class="artwork-info">
+            <h3 class="artwork-title">The Palm House II</h3>
+            <p class="artwork-medium">Ink &amp; pigment on time-worn linen</p>
+            <p class="artwork-price">Price on Application</p>
+          </div>
+        </article>
+
+        <article class="artwork-card artwork-card--coming" aria-label="New work arriving">
+          <div class="artwork-image artwork-image--placeholder">
+            <div class="placeholder-content">
+              <span class="script-accent" style="color: var(--sienna); opacity: 0.75;">new works</span>
+              <span class="placeholder-sub">arriving soon</span>
+            </div>
+          </div>
+          <div class="artwork-info">
+            <h3 class="artwork-title" style="opacity:0.35;">The Palm House III</h3>
+            <p class="artwork-medium" style="opacity:0.35;">Coming soon</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="collection-name">
+        <span class="script-accent" style="font-size:1.5rem; display:block; text-align:center; margin-bottom:2px;">The Palm House</span>
+        <span class="collection-sub">collection</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMISSIONS ===== -->
+  <section class="commissions-section" id="commissions">
+    <div class="container">
+      <div class="rule"></div>
+      <div class="commissions-grid">
+        <div class="commissions-text">
+          <h2 class="section-label" style="text-align:left;">COMMISSIONS</h2>
+          <p>St. Clemente welcomes select commissions for private residences, luxury hotels, branded residences and considered spaces around the world.</p>
+          <p>Each work is thoughtfully created in dialogue with its surroundings, bringing together botanical inspiration, delicate ink and time-worn textures to create something entirely individual.</p>
+          <p>For commissions and collaborations, we warmly invite you to get in touch.</p>
+          <a href="#correspondence" class="btn-primary">Get in Touch</a>
+        </div>
+        <div class="commissions-image">
+          <img
+            src="assets/images/artwork-2.jpg"
+            alt="Large-scale St. Clemente commission — panoramic twin palms and architectural silhouette on aged linen"
+            loading="lazy"
+          >
+        </div>
+      </div>
+      <div class="rule"></div>
+    </div>
+  </section>
+
+  <!-- ===== CORRESPONDENCE ===== -->
+  <section class="correspondence-section" id="correspondence">
+    <div class="correspondence-inner">
+      <h2 class="section-label">CORRESPONDENCE</h2>
+      <p>A fondness for the written word has always been at the heart of St. Clemente.</p>
+      <p>Whether concerning a piece of art, a commission, or a note from a kindred spirit, words are always a pleasure to receive.</p>
+      <div class="correspondence-email-block">
+        <a href="mailto:abbie@stclemente.com" class="correspondence-email">abbie@stclemente.com</a>
+      </div>
+      <div class="correspondence-sign">
+        <span class="script-accent" style="font-size:1.375rem; display:block; text-align:center; margin-bottom:6px;">with love</span>
+        <p class="correspondence-name">Abbie</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-logo">ST. CLEMENTE</div>
+    <p class="footer-tag">art &amp; other misdemeanours</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#works">Works</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#story">Story</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#commissions">Commissions</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#correspondence">Correspondence</a>
+    </nav>
+    <p class="footer-copy">&copy; 2024 St. Clemente. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
