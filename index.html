@@ -63,12 +63,15 @@
   <!-- ===== HERO ===== -->
   <section class="hero" id="home" aria-label="St. Clemente — Art &amp; Other Misdemeanours">
     <div class="hero-image">
-      <img
-        src="assets/images/hero.jpg"
-        alt="Abbie, founder of St. Clemente, beside a colonial rattan chair with palm fronds against a warm stone wall"
-        fetchpriority="high"
-        loading="eager"
-      >
+      <picture>
+        <source media="(max-width: 768px)" srcset="assets/images/hero-mobile.jpg">
+        <img
+          src="assets/images/hero.jpg"
+          alt="Abbie, founder of St. Clemente, beside a colonial rattan chair with palm fronds against a warm stone wall"
+          fetchpriority="high"
+          loading="eager"
+        >
+      </picture>
     </div>
     <!-- Mobile-only brand overlay — desktop uses text baked into the photo -->
     <div class="hero-brand" aria-hidden="true">

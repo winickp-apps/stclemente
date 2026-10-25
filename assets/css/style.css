@@ -934,9 +934,9 @@ button {
 }
 
 @media (max-width: 768px) {
-  /* Hero: centre on Abbie's face, add HTML brand text */
+  /* Hero: portrait crop served via <picture>, centre + top-anchor */
   .hero-image img {
-    object-position: 44% 10%;
+    object-position: 55% 8%;
   }
 
   .hero-brand {
